@@ -1,0 +1,14 @@
+@media (min-width:600px){
+  /* .brandName{
+    font-weight: bold;
+  } */
+  #brandName{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 6px;
+    margin-left: 20px;
+  }
+  .login-text{
+    color: black;
+  }
+}

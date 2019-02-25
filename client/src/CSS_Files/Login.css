@@ -1,0 +1,17 @@
+@media (min-width:700px){
+  .signin_text{
+    font-size: 50px;
+    margin-top: 100px;
+  }
+  .loginForm{
+    margin-top: 30px;
+  }
+  .loginsubmitbt{
+    width: 100%;
+    margin-top: 30px;
+    height : 40px;
+  }
+  .forgot{
+    margin-top : 20px;
+  }
+}
