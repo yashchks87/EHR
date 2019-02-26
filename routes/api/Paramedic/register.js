@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const mailFile = require('../mailSender');
 const randomString = require('randomstring');
-const Paramedic = require('../../../models/Paramedic');
+const Paramedic = require('./Paramedic');
 // router.get('/', (req,res)=>{
 //   res.send('Hello');
 // });
