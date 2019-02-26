@@ -22,7 +22,7 @@ class Navbar extends Component {
                 </div>
                 <div className='ml-4'></div>
                 <div className="button is-light">
-                  <Link to='/login'>Signup</Link>
+                  <Link to='/signup'>Signup</Link>
                 </div>
               </div>
             </div>

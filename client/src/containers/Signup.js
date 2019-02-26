@@ -3,6 +3,9 @@ import Navbar from '../components/Navbar';
 import axios from 'axios';
 import '../CSS_Files/Signup.css';
 export default class Signup extends Component{
+  componentDidMount(){
+    document.title = 'Sign up'
+  }
   constructor(props){
     super(props);
     this.state = {
