@@ -1,4 +1,4 @@
-const nodeMailer = require('nodeMailer');
+const nodeMailer = require('nodemailer');
 var transporter = nodeMailer.createTransport({
   service : 'Godaddy',
   host : 'smtpout.secureserver.net',
