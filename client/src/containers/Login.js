@@ -41,19 +41,17 @@ class Login extends Component{
         <div className='row'>
           <div className='col-lg-2'>
           </div>
-          <div className='col-lg-3'>
+          <div className='col-lg-4'>
             <div className='signin_text'>
               Sign in
             </div>
             <form className='loginForm' onSubmit={this.submitData}>
               <div className="form-group">
-                <label>Email address</label>
-                <input type="email" className="form-control" id="exampleInputEmail1" name='email' onChange={this.inputData} aria-describedby="emailHelp" placeholder="Enter email"/>
+                <input type="email" className="form-control input_length" id="exampleInputEmail1" name='email' onChange={this.inputData} aria-describedby="emailHelp" placeholder="Enter email"/>
                 <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
               <div className="form-group">
-                <label>Password</label>
-                <input type="password" className="form-control" id="exampleInputPassword1" name='password' onChange={this.inputData} placeholder="Password"/>
+                <input type="password" className="form-control input_length" id="exampleInputPassword1" name='password' onChange={this.inputData} placeholder="Password"/>
               </div>
               <button type="submit" className="btn btn-primary loginsubmitbt">Submit</button>
             </form>
