@@ -1,0 +1,7 @@
+@media (min-width:700px){
+  .main_back{
+    background-color: #ff4d4d;
+    height: 120px;
+    width: 100%;
+  }
+}

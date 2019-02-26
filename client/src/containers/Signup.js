@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import axios from 'axios';
+import Footer from '../components/Footer';
 import '../CSS_Files/Signup.css';
 export default class Signup extends Component{
   componentDidMount(){
@@ -96,6 +97,9 @@ export default class Signup extends Component{
           </div>
           <div className='col-lg-2'>
           </div>
+          </div>
+          <div className='fixed-bottom'>
+            <Footer/>
           </div>
       </div>
     );

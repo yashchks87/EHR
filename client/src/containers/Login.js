@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 // import Navbar from '../components/Navbar';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import Footer from '../components/Footer';
 import '../CSS_Files/Login.css';
 class Login extends Component{
   componentDidMount(){
@@ -60,6 +61,9 @@ class Login extends Component{
               <Link to='/forgotpassword'>Forgot your password?</Link>
             </div>
           </div>
+        </div>
+        <div className='fixed-bottom'>
+          <Footer/>
         </div>
       </div>
     );
