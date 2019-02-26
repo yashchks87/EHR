@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Paramedic = require('./Paramedic');
+const Paramedic = require('../../../models/Paramedic');
 
 router.post('/login', (req,res)=>{
     Paramedic
