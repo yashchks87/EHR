@@ -13,11 +13,11 @@ class Navbar extends Component {
           </div>
           <div className='navbar-end'>
             <div className="navbar-item">
-              <div class="buttons">
-                  <a class="button is-link">
+              <div className="buttons">
+                  <a className="button is-link">
                   <strong>Sign up</strong>
                 </a>
-                <a class="button is-light">
+                <a className="button is-light">
                   Log in
                 </a>
               </div>

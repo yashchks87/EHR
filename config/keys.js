@@ -1,3 +1,6 @@
-module.exports = {
-  MONGO_URI : 'mongodb://yash:yash1234@ds349455.mlab.com:49455/ehr'
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('./keys_prod');
+}
+else {
+  module.exports = require('./keys_dev');
 }

@@ -8,20 +8,22 @@ class Navbar extends Component {
       <div>
         <nav className="navbar bg-danger" id="navid" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <a className="navbar-item" id="brandName">
-              EHR
-            </a>
+            <div className="navbar-item" id="brandName">
+              <Link className='brandNam' to='/'>
+                EHR
+              </Link>
+            </div>
           </div>
           <div className='navbar-end'>
             <div className="navbar-item">
-              <div class="buttons">
-                <a class="button is-link">
+              <div className="buttons">
+                <div className="button is-link">
                   <Link className='login-text' to='/login'>Login</Link>
-                </a>
+                </div>
                 <div className='ml-4'></div>
-                <a class="button is-light">
+                <div className="button is-light">
                   <Link to='/login'>Signup</Link>
-                </a>
+                </div>
               </div>
             </div>
           </div>
