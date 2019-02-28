@@ -1,4 +1,7 @@
 @media (min-width:700px){
+  .main_signup{
+    margin: 10px;
+  }
   .doc_signup{
     font-size: 50px;
     margin-top: 30px;
@@ -9,5 +12,15 @@
   .doc_signup_button{
     margin-left: 200px;
     width: 470px;
+  }
+}
+@media (max-width : 700px ){
+  .main_signup{
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .doc_signup{
+    font-size: 40px;
+    font-weight: bold;
   }
 }

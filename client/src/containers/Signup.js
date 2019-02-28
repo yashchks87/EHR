@@ -47,7 +47,7 @@ export default class Signup extends Component{
     return(
       <div>
         <Navbar/>
-        <div className='row'>
+        <div className='row main_signup'>
           <div className='col-lg-2'>
           </div>
           <div className='col-lg-8'>

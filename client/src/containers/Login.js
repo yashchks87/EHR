@@ -38,7 +38,7 @@ class Login extends Component{
     return(
       <div>
         <Navbar/>
-        <div className='row'>
+        <div className='row main_login'>
           <div className='col-lg-2'>
           </div>
           <div className='col-lg-4'>
