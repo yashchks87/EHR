@@ -7,7 +7,7 @@ import Forgotpassword from './containers/Forgotpassword';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import EmailVerification from './components/EmailVerification';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <Router>
@@ -17,7 +17,7 @@ class App extends Component {
             <Route exact path='/login' component={Login}/>
             <Route exact path='/signup' component={Signup}/>
             <Route exact path='/forgotpassword' component={Forgotpassword}/>
-            <Route exact path='/emailverification' component={EmailVerification}/>
+            <Route path='/emailverification' component={EmailVerification}/>
           </Switch>
         </div>
       </Router>
@@ -25,4 +25,3 @@ class App extends Component {
   }
 }
 
-export default App;

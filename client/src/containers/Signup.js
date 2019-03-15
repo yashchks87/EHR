@@ -59,34 +59,34 @@ export default class Signup extends Component{
               <form onSubmit = {this.submitData}>
               <div className="form-row">
                 <div className="form-group col-md-6">
-                  <input type="text" className="form-control" name='firstName' onChange={this.inputData} placeholder="first name"/>
+                  <input type="text" className="form-control border-primary" name='firstName' onChange={this.inputData} placeholder="first name"/>
                 </div>
                 <div className="form-group col-md-6">
-                  <input type="text" className="form-control" name='lastName' onChange={this.inputData} placeholder="last name"/>
-                </div>
-              </div>
-              <div className="form-row mt-4">
-                <div className="form-group col-md-6">
-                  <input type="email" className="form-control" name='email' onChange={this.inputData} placeholder="email"/>
-                </div>
-                <div className="form-group col-md-6">
-                  <input type="password" className="form-control" name='password' onChange={this.inputData} placeholder="Password"/>
+                  <input type="text" className="form-control border-primary" name='lastName' onChange={this.inputData} placeholder="last name"/>
                 </div>
               </div>
               <div className="form-row mt-4">
                 <div className="form-group col-md-6">
-                  <input type="password" className="form-control" name='rePassword' onChange={this.inputData} placeholder="re-enter password"/>
+                  <input type="email" className="form-control border-primary" name='email' onChange={this.inputData} placeholder="email"/>
                 </div>
                 <div className="form-group col-md-6">
-                  <input type="number" className="form-control" name='mobile' onChange={this.inputData} placeholder="mobile"/>
+                  <input type="password" className="form-control border-primary" name='password' onChange={this.inputData} placeholder="Password"/>
                 </div>
               </div>
               <div className="form-row mt-4">
                 <div className="form-group col-md-6">
-                  <input type="text" className="form-control" name='specialize' onChange={this.inputData} placeholder="specialize"/>
+                  <input type="password" className="form-control border-primary" name='rePassword' onChange={this.inputData} placeholder="re-enter password"/>
                 </div>
                 <div className="form-group col-md-6">
-                  <input type="text" className="form-control" name='sex' onChange={this.inputData} placeholder="gender"/>
+                  <input type="number" className="form-control border-primary" name='mobile' onChange={this.inputData} placeholder="mobile"/>
+                </div>
+              </div>
+              <div className="form-row mt-4">
+                <div className="form-group col-md-6">
+                  <input type="text" className="form-control border-primary" name='specialize' onChange={this.inputData} placeholder="specialize"/>
+                </div>
+                <div className="form-group col-md-6">
+                  <input type="text" className="form-control border-primary" name='sex' onChange={this.inputData} placeholder="gender"/>
                 </div>
               </div>
               <div className='doc_signup_button'>

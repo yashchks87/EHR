@@ -17,7 +17,7 @@ module.exports = {
       from : 'developer@choksiyash.com',
       to : mailObject.toEmail,
       subject : mailObject.Subject,
-      html : `To activate your account please press this<a href=${mailObject.url}/${mailObject.randomString}>Link</a>.`
+      html : `To activate your account please press this <a href="${mailObject.url}/${mailObject.toEmail}/${mailObject.randomString}">Link</a>.`
     }
     transporter
       .sendMail(mailOptions)

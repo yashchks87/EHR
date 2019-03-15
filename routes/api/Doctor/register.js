@@ -31,7 +31,7 @@ router.post('/register', (req,res)=>{
             let mailObject = {
               toEmail : req.body.Email,
               Subject : 'Email verification for Electronic Health Records',
-              url : 'localhost:5001/emailverification/doctor/',
+              url : 'localhost:2999/emailverification/doctor',
               randomString : authString
             }
             mailFile.sender(mailObject);

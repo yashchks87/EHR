@@ -8,6 +8,7 @@ const paramedic_register = require('./routes/api/Paramedic/register');
 const doctor_login = require('./routes/api/Doctor/login');
 const paramedic_login = require('./routes/api/Paramedic/login');
 const patient_login = require('./routes/api/Patient/login');
+const doctor_verification = require('./routes/api/Doctor/emailVerfication');
 const port = process.env.PORT || 5001;
 // To get values form the different forms.
 const bodyParser = require('body-parser');
@@ -38,5 +39,6 @@ app.use('/api/routes/paramedic', paramedic_register);
 app.use('/api/routes/doctor', doctor_login);
 app.use('/api/routes/patient', patient_login);
 app.use('/api/routes/paramedic', paramedic_login);
+app.use('/api/routes/doctor', doctor_verification);
 
 app.listen(port);
