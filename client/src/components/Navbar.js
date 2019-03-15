@@ -9,7 +9,7 @@ class Navbar extends Component {
         <nav className="navbar bg-danger" id="navid" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
             <div className="navbar-item" id="brandName">
-              <Link className='brandNam' to='/'>
+              <Link className='brandNam text-white' to='/'>
                 EHR
               </Link>
             </div>
