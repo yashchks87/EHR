@@ -44,6 +44,25 @@ export default class Signup extends Component{
       .catch(err=>console.log(err));
   }
   render(){
+    let {
+      firstName,
+      lastName,
+      email,
+      mobile,
+      specialize,
+      sex,
+      password,
+      rePassword
+    }=this.state;
+    const isInvalid = 
+      firstName === '' ||
+      lastName === '' ||
+      email === '' ||
+      mobile === '' ||
+      specialize === '' ||
+      sex === '' ||
+      password === '' ||
+      rePassword === '';
     return(
       <div>
         <Navbar/>
@@ -92,7 +111,7 @@ export default class Signup extends Component{
               <div className='row'>
                 <div className="col-lg-2"/>
                 <div className="col-lg-8">
-                  <button type="submit" className="btn btn-primary w-100 mt-3">Submit</button>
+                  <button type="submit" disabled={isInvalid} className="btn btn-primary w-100 mt-3">Submit</button>
                 </div>
                 <div className="col-lg-2"/>
               </div>

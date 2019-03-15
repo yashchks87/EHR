@@ -35,6 +35,13 @@ class Login extends Component{
       .catch(err=>console.log(err));
   }
   render(){
+    let {
+      email,
+      password
+    }=this.state;
+    const isInvalid = 
+      email === '' ||
+      password === '';
     return(
       <div>
         <Navbar/>
@@ -53,7 +60,7 @@ class Login extends Component{
               <div className="form-group">
                 <input type="password" className="form-control input_length" id="exampleInputPassword1" name='password' onChange={this.inputData} placeholder="Password"/>
               </div>
-              <button type="submit" className="btn btn-primary loginsubmitbt">Submit</button>
+              <button type="submit" disabled={isInvalid} className="btn btn-primary loginsubmitbt">Submit</button>
             </form>
             <div className='forgot'>
               <Link to='/forgotpassword'>Forgot your password?</Link>

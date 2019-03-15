@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'bulma/css/bulma.css';
 import Navbar from './Navbar';
+import Footer from './Footer';
 class Home extends Component {
   componentDidMount(){
     document.title = "HOME";
@@ -9,6 +10,9 @@ class Home extends Component {
     return (
       <div>
         <Navbar/>
+        <div className="fixed-bottom">
+          <Footer/>
+        </div>
       </div>
     );
   }
