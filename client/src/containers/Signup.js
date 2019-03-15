@@ -87,6 +87,7 @@ export default class Signup extends Component{
               <div className="form-row mt-4">
                 <div className="form-group col-md-6">
                   <input type="email" className="form-control " name='email' onChange={this.inputData} placeholder="email"/>
+                  <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div className="form-group col-md-6">
                   <input type="password" className="form-control " name='password' onChange={this.inputData} placeholder="Password"/>
