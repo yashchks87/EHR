@@ -21,6 +21,13 @@ export default class Forgotpassword extends Component{
     console.log(this.state);
   }
   render(){
+    let {
+      email,
+      reEmail
+    }=this.state;
+    const isInvalid = 
+    email === '' ||
+    reEmail === '';
     return(
       <div>
         <Navbar/>
@@ -39,17 +46,17 @@ export default class Forgotpassword extends Component{
             <div className="row">
               <div className="col-lg-2"/>
               <div className="col-lg-8">
-                <form onSubmit={this.submitData}>
+                <form className="mt-5 mx-4" onSubmit={this.submitData}>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" name="email" onChange={this.inputData} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                    <input type="email" class="form-control" name="email" onChange={this.inputData} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter email"/>
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" name="reEmail" onChange={this.inputData} id="exampleInputPassword1" placeholder="Password"/>
+                    <label for="exampleInputPassword1">Re-enter email</label>
+                    <input type="password" class="form-control" name="reEmail" onChange={this.inputData} id="exampleInputPassword1" placeholder="re-enter email"/>
                   </div>
-                  <button type="button" class="btn w-100 btn-primary">Submit</button>  
+                  <button type="button" disabled={isInvalid} class="btn w-100 btn-primary">Submit</button>  
                 </form>
               </div>
               <div className="col-lg-2"/>
